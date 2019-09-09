@@ -96,7 +96,7 @@ namespace LOS {
 			
 			meshVertices.Add(Vector3.zero);
 			
-			for (float degree=_startAngle; degree<_endAngle; degree+=degreeStep) {
+			for (float degree=_startAngle; degree<=_endAngle; degree+=degreeStep) {
 				direction = SMath.DegreeToUnitVector(degree);
 
 				float distanceForCheck = Application.isPlaying ? _radius : float.MaxValue - 100;	// 100000 for big number
